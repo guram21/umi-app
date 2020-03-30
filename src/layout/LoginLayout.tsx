@@ -1,10 +1,13 @@
 import React from 'react';
-import TopMenu from '@/modules/pages/TopMenu';
+import { Layout } from 'antd';
+const { Header, Content, Footer } = Layout;
 
-export default () => {
+export default ({children}) => {
   return (
-    <div>
-
-    </div>
+    <Layout>
+      <Header>Header</Header>
+      <Content>{children}</Content>
+      <Footer>Footer</Footer>
+    </Layout>
   );
-}
+};

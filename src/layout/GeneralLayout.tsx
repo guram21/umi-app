@@ -1,10 +1,7 @@
 import React from 'react';
-import TopMenu from '@/modules/pages/TopMenu';
 
-export default () => {
+export default ({children}) => {
   return (
-    <div>
-
-    </div>
+    <div>General Layout {children}</div>
   );
 }
