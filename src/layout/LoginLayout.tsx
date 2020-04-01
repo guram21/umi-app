@@ -1,13 +1,13 @@
 import React from 'react';
-import { Layout } from 'antd';
-const { Header, Content, Footer } = Layout;
+import { Row, Col, Divider } from 'antd';
+import '@/_microrules.less';
 
-export default ({children}) => {
+export default ({ children }) => {
   return (
-    <Layout>
-      <Header>Header</Header>
-      <Content>{children}</Content>
-      <Footer>Footer</Footer>
-    </Layout>
+    <Row justify="center" className='mt-4rem'>
+      <Col xs={20} sm={20} md={12} lg={8}>
+        {children}
+      </Col>
+    </Row>
   );
 };
